@@ -36,7 +36,7 @@ jobs:
           tar xf linux-5.15.6.tar.xz
           cd linux-5.15.6/
           sudo apt -qq -y update
-          sudo apt -gg -y upgrade
+          sudo apt -qq -y upgrade
           sudo apt -qq -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf git wget xz-utils zip unzip
           cp arch/x86/configs/x86_64_defconfig ./.config
           make
